@@ -1,0 +1,29 @@
+<!-- CSS의 @keyframes을 이용해 화살표와 같이 움직이는 애니메이션을 구현해 보자. -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<style>
+		div {
+			background-color: red;
+			width: 100px;
+			height: 100px;
+			position: relative;
+			animation : 5s my;
+			animation-iteration-count : 10;
+		}
+		
+		@keyframes my {
+			0% {left:0px; top : 0px;}
+			25% {left:100px; top : 0px;}
+			50% {left:100px; top : 100px;}
+			75% {left:0px; top : 100px;}
+			100% {left:0px; top : 0px;}
+		}
+	</style>
+<title>Insert title here</title>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

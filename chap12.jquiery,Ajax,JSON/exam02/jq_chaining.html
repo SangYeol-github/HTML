@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+	<script src = "../jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("button").click(function () {
+				$("#coffee").show().fadeOut("slow").slideDown("slow");
+			});
+		});
+	</script>
+</head>
+<body>
+	<button>메소드 체이닝 시작</button>
+	<img id = "coffee" src = "../coffee.gif" alt = "" width="120" height="100" style="display : none;" />
+</body>
+</html>

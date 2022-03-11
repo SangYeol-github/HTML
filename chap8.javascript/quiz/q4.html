@@ -1,0 +1,24 @@
+<!-- confirm() 메서드를 이용해 게임 한판 하겠냐고 물어본다.
+confirm()이 반환하는 값을 인수로 하여 process() 함수를 호출한다.
+process() 함수에서는 인수로 들어온 값이 참이면
+"좋습니다. 게임을 시작합니다."를 출력한다.
+인수가 거짓이면 "네,나중에 하시죠"를 출력한다. -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+	<script>
+		var check = confirm("게임 한판 하실래요?");
+		
+		if(check) {
+			alert("좋습니다. 게임을 시작합니다.");
+		} else {
+			alert("네,나중에 하시죠");
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>

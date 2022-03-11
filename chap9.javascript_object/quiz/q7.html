@@ -1,0 +1,26 @@
+<!-- 인터넷에서 비속어가 사용되면 이것을 검출할 수 있는 함수 check(str)를 작성하여 보자.
+check()는 "XXX"를 문자열이 포함하고 있으면 true를 반환한다. 그렇지 않으면
+false를 반환한다. 예를 들어 다음과 같다.
+check('buy XXX now') == true; -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+	<script>
+		function check(str) {
+			
+			if(str.indexOf("XXX")==-1) {
+				return false;
+			} else {
+				return true;
+			}
+		}
+		alert(check("buy XXX now"));
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

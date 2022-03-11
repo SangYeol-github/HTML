@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+	<script>
+		function OnMouseDown(button) {
+			button.style.color = "#ff0000";
+		}
+		
+		function OnButtonUp(button) {
+			button.style.color = "#000000";
+		}
+		
+		
+	</script>
+</head>
+<body>
+	<button onmousedown = "OnMouseDown(this)" onmouseup="OnButtonUp(this)">
+		눌러보세요!</button>
+</body>
+</html>

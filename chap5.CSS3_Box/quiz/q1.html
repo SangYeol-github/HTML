@@ -1,0 +1,36 @@
+<!-- <body>요소의 왼쪽 마진은 200px로 한다.
+<body>요소의 배경색은 녹색이고 coffee.jpg라는 이미지를 한 번만 왼쪽 상단에 표시한다.
+<div>로 컨테이너를 생성하고 <h1>과 <p>를 내부에 정의한다.
+컨테이너의 경계선은 6px 두께의 빨간색 점선이다.
+<!DOCTYPE html> -->
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+	<style>
+		body{
+            margin-left: 200px;
+            background-color: green;
+            background-image: url('../coffee.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        div{
+            margin-left: 200px;
+            background-color: yellow;
+            border: 6px dotted red;
+            width : 300px;
+            height: 300px;
+        }
+	</style>
+</head>
+<body>
+	<div>
+		<h1>CSS</h1>
+		<p>CSS3는 W3C에서 한창 개발 중인 규격이다. W3C사이트에서 보면 CSS3 규격중에서 완료된 것(recommendation)도
+			있고 아직 한창 토의 중인 규격(working draft)도 있음을 알 수 있다. CSS Snapshot 2010 문서를 보면 CSS3 개발 현황을
+			알 수 있다.
+		</p>
+	</div>
+</body>
+</html>

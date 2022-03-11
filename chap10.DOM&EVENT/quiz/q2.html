@@ -1,0 +1,18 @@
+<!-- 다음 화면과 같이 버튼이 눌리면 HTML 요소의 내용을 조작하는 자바스크립트 프로그램을 작성하라. -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+	<script>
+		function change(v) {
+			document.getElementById("ex").innerHTML = v;
+		}
+	</script>
+</head>
+<body>
+	<div id = "ex">버튼을 누르면 이 요소의 내용이 변경됩니다.</div>
+	<input type = "button" onclick = "change('이 텍스트는 자바스크립트에 의해 변경되었습니다.')"
+		value = "버튼을 누르세요!">
+</body>
+</html>

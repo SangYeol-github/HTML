@@ -1,0 +1,49 @@
+<!-- 상대위치 설정(relative positioning)을 이용해 다음과 같은
+<div> 블록을 표시해보자. -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<style>
+		.box {
+			position : relative;
+			text-align: center;
+			width: 100px; height: 100px;
+			left : 30px;
+		}
+		
+		.box-a {
+			position : relative;
+			background-color : pink;
+		}
+		.box-b {
+			position : relative;			
+			background-color : powderblue;
+			left : 130px;
+			bottom : 100px;
+			
+		}
+		.box-c {
+			position : relative;	
+			bottom : 100px;
+			background-color: lightgreen;
+		}
+		.box-d {
+			position : relative;	
+			bottom : 200px;
+			left : 130px;
+			background-color: lightslategrey;
+		}
+	</style>
+<title>Insert title here</title>
+</head>
+<body>
+	<div class ="content">
+		<div class = "box box-a"></div>
+		<div class = "box box-b"></div>
+		<div class = "box box-c"></div>
+		<div class = "box box-d"></div>
+	
+	</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!-- 회원 신청서를 받는 웹 페이지를 작성하여 본다. 
+입력 필드에서 받은 문자열을 대상으로 정규식을 이용해 입력을 검증하도록 하라. -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+	<script>
+		function phone() {
+			var num;
+			num = document.getElementById('phone');
+			var exp = /^[0-9]+$/;
+			
+			if(num.value.match(exp)) {
+				return true;
+			} else {
+				alert("올바른 번호를 입력하세요.");
+				num.focus();
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+	<h3>회원가입</h3>
+		<form>
+			이름: <input type = "text" id = "name"/><br />
+			주소: <input type = "text" id = "address" /><br />
+			성별: <input type = "radio" value = "남성">남성
+				  <input type = "radio" value = "여성">여성<br />
+			이메일:<input type = "email" id="email" /><br />
+			패스워드:<input type = "password" id = "password"><br />
+			패스워드확인:<input type = "password"><br />
+			휴대폰:<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" /> <br />
+			<input type = "submit" value = "제출" onclick = "phone();" />
+			<input type = "reset" value = "지우기">
+		</form>
+</body>
+</html>

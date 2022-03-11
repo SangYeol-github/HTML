@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+	<script src = "../jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#fadeIn").click(function () {
+				$("#coffee").fadeIn("slow");
+			});
+			$("#fadeOut").click(function () {
+				$("#coffee").fadeOut("slow");
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id = "fadeIn">fadeIn()</button>
+	<button id = "fadeOut">fadeOut()</button><br>
+	<img id = "coffee" src = "../coffee.gif" alt = "" width="120" height="100" style="display : none; position : relative;" />
+</body>
+</html>

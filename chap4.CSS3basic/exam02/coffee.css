@@ -1,0 +1,23 @@
+@charset "utf-8";
+h1, p {
+	font-family: serif;
+	color : black;
+}
+
+h1 {
+	border-bottom: 1px solid gray;
+	color : red;
+}
+
+body {
+	background-color: yellow;
+	font-family: serif;
+	color: black;
+}
+
+em {
+	color : red;
+}
+
+p.first { color : green; }
+p.second { color : blue; }

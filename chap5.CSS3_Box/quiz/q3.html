@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+	<style>
+            table,td{
+                border: 5px solid black;
+                background-color: yellow;
+                font-size : 50px;
+            }
+            tr.target1 td{
+                background-color: red;
+            }
+            tr.target2 td{
+                background-color: yellow;
+            }
+        </style>
+</head>
+<body>
+	<table border="1">
+           <tr class="target1">
+               <td>1</td>
+               <td rowspan="2">2</td>
+               <td>3</td>
+               <td>4</td>
+           </tr>
+           <tr class="target2">
+               <td>5</td>
+           </tr>
+       </table>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!-- 다음과 같은 화면을 가지는 jQuery 소스를 작성하라. -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+	<script src = "../jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#fadeIn").click(function () {
+				$("#special").fadeIn("slow");
+			});
+			$("#fadeOut").click(function () {
+				$("#special").fadeOut("slow");
+			});			
+		});
+	</script>
+</head>
+<body>
+	<p id ="special">이것은 p요소입니다.</p>
+	<button id = "fadeIn">보이기</button>
+	<button id = "fadeOut">감추기</button>
+</body>
+</html>

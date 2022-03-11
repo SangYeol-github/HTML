@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<canvas id ="myCanvas" width = "300" height = "200"></canvas>
+	<script>
+	var canvas = document.getElementById('myCanvas');
+	var context = canvas.getContext('2d');
+	
+	context.beginPath();
+	context.moveTo(90, 130);
+	context.bezierCurveTo(140, 10, 288, 10, 288, 130);
+	context.lineWidth = 10;
+	
+	context.strokeStyle = "black";
+	context.stroke();
+	</script>
+</body>
+</html>

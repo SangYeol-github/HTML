@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		var numbers = [10, 20, 30, 40, 50];
+		function isBigEnough(element, index, array) {
+			return (element >=30);
+		}
+		
+		var filterd = numbers.filter(isBigEnough);
+		document.write("필터링 된 배열: " + filterd);
+	</script>
+</body>
+</html>

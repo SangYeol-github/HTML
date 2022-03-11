@@ -1,0 +1,38 @@
+<!-- CSS를 이용해 다음과 같은 변환 효과를 내는 HTML 문서를 작성하시오.
+1.마우스가 위에 있으면 사각형이 360도 회전한다.
+2.사각형의 색상은 빨강색에서 노랑색으로 변한다.
+3.사각형의 크기는 2배가 된다. -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<style>
+		p#A {
+			background-color: red;
+			width: 100px;
+			height: 100px;
+			transition : width 5s height 5s border 5s, transform 5s;
+			-webkit-transition: width 5s, height 5s, border 5s, -webkit-transform 5s;
+			
+		}
+		p#A:hover {
+			background-color: yellow;
+			/* width : 400px;
+			height : 400px; */
+			transform : scale(2,2) rotate(360deg);
+			-webkit-transform : scale(2,2) rotate(360deg);
+		}
+	
+	</style>
+	
+<title></title>
+</head>
+<body>
+	<p>
+	<p>
+	<p>
+	<p>
+	
+	<p id ="A">마우스를 올려보세요.</p>
+</body>
+</html>

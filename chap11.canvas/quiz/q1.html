@@ -1,0 +1,19 @@
+<!-- 다음 코드에서 잘못된 부분은 무엇인가?
+var canvas = document.getElementById("myCanvas");
+canvas.fillRect(50,50,100,200); -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<canvas id = "myCanvas" width="600" height="400"></canvas>
+	<script>
+		var canvas = document.getElementById("myCanvas");
+		var context = canvas.getContext("2d");
+		context.fillStyle = "#00FF00";
+		context.fillRect(50,50,100,200);
+	</script>
+</body>
+</html>

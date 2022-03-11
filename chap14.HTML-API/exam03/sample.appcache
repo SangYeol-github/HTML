@@ -1,0 +1,19 @@
+CACHE MANIFEST
+# 2022-03-09:v2
+
+# 반드시 캐시해야 할 파일
+CACHE:
+index.html
+stylesheet.css
+images/logo.png
+scripts/main.js
+
+# 사용자가 반드시 온라인이어야 하는 리소스
+NETWORK:
+login.php
+
+# 만약 main.jsp가 접근될 수 없으면 static.html로 서비스한다.
+# 다른 모든 .html 파일 대신에 offline.html로 서비스한다.
+FALLBACK:
+/main.jsp /static.html
+*.html /offline.html 

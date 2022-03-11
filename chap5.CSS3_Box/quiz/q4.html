@@ -1,0 +1,20 @@
+<!-- 다음과 같이 변화하는 하이퍼 링크를 CSS3로 정의하여 보자. -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+	<style>
+		a {
+			font-size : 50px;
+			text-decoration: none;
+		}
+		a.style1:link { color : green; background-color: black; }
+		a.style1:visited { color : yellow; background-color: black; }
+		a.style1:hover { color : pink; background-color: black; text-decoration: underline; }
+	</style>
+</head>
+<body>
+	<p><a class = "style1" href = "#">Hyper Link</a>
+</body>
+</html>

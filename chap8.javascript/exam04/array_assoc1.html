@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name = "myForm">
+		field1<input type = "text" name = "a0"><br />
+		field2<input type = "text" name = "a1"><br />
+		field3<input type = "text" name = "a2"><br />
+		<input type = "button" value = "초기화" onclick="init();">
+	</form>
+	
+	<script>
+		function init() {
+			for(var i=0; i<3; i++) {
+				document.myForm["a"+ i ].value = i;
+			}
+		}
+	</script>
+</body>
+</html>

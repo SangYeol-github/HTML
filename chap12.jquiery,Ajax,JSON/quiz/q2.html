@@ -1,0 +1,19 @@
+<!-- 사용자가 글자를 입력할 때마다 글자를 읽어와서 화면에 표시한다. -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+	<script src = "../jquery-3.6.0.min.js"></script>
+	<script>
+		 function printName() {
+			const name = document.getElementById('name').value;
+			document.getElementById("result").innerText = name;
+		} 
+	</script>
+</head>
+<body>
+	<input id='name' onkeyup='printName()'/>
+	<div id='result'></div>
+</body>
+</html>

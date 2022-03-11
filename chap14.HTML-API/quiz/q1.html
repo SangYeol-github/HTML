@@ -1,0 +1,68 @@
+<!-- 웹 스토리지를 이용해 사용자가 입력한 문자열을 로컬 스토리지와 세션 스토리지에 저장했다가
+ "조회" 버튼을 누르면 다시 조회하도록 한다. -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+</head>
+<body>
+    	<p>localStorage</p>
+    	<textarea name="1" id="1" cols="20" rows="6"></textarea>
+		<input type="button" id="savebtn1" value="저장!" onclick="saveMyStaff1()" /><br>
+    	<textarea name="1" id="2" cols="20" rows="6"></textarea>
+   		<input type="button" id="loadbtn1" value="조회!" onclick="load1()" /><br>
+   		<p>sessionStorage</p>
+        <textarea name="1" id="3" cols="20" rows="6"></textarea>
+		<input type="button" id="savebtn2" value="저장!" onclick="saveMyStaff2()" /><br>
+    	<textarea name="1" id="4" cols="20" rows="6"></textarea>
+   		<input type="button" id="loadbtn2" value="조회!" onclick="load2()" /><br>
+
+    <script>
+      let v1 = [];
+      function saveMyStaff1() {
+        document.getElementById("savebtn1").value = "저장됨!";
+
+        let v_1 = document.getElementById("1").value;
+        v1.push(v_1);
+        localStorage.setItem("k1", JSON.stringify(v1));
+        v_1 = "";
+      }
+      
+      let v3 = [];
+      function saveMyStaff2() {
+      
+        document.getElementById("savebtn2").value = "저장됨!";
+        let v_3 = document.getElementById("3").value;
+        v3.push(v_3);
+        sessionStorage.setItem("k3", JSON.stringify(v3));
+        v_3 = "";
+      } 
+      
+      function load1() {
+        document.getElementById("loadbtn1").value = "조회!";
+        let storedV1 = JSON.parse(localStorage.getItem("k1"));
+        if (storedV1) {
+          document.getElementById(2).value = storedV1;
+         
+          v1 = storedV1;
+        }
+      }
+      
+      function load2() {
+	      document.getElementById("loadbtn2").value = "조회!";
+	      let storedV2 = JSON.parse(sessionStorage.getItem("k3"));
+	      if (storedV2) {
+	        document.getElementById(4).value = storedV2;
+	       
+	        v2 = storedV2;
+	      }
+      }
+      
+      function init() {
+        load();
+      }
+      init();
+    </script>
+</body>
+</html>

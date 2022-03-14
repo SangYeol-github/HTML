@@ -1,0 +1,30 @@
+<!-- jQuery mobile 리스트뷰 기능을 이용해서 다음과 같은 웹 페이지를 작성해 본다. -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name ="viewport" content = "width=device-width, initial-scale = 1">
+<title>Insert title here</title>
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role = "header">
+			<h1>리스트뷰 예제</h1>
+		</div>
+			<h1>스마트폰 업체 리스트</h1>
+		<div data-role = "content">
+			<ul data-role="listview" data-inset ="true" data-filter="true">
+				<li><a href = "#">삼승전자</a></li>
+				<li><a href = "#">애폴</a></li>
+				<li><a href = "#">MG전자</a></li>
+			</ul>
+		</div>
+		<div data-role = "footer">
+			<h4>(c)홍길동</h4>
+		</div>
+	</div>
+</body>
+</html>

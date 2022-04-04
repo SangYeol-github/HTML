@@ -2,7 +2,7 @@
 개인공부   
    
 실행프로그램 : Eclipse   
-참고 도서 :   
+참고 도서 : HTML5+CSS3+JavaScript로 배우는 웹프로그래밍 기초      
 chap01 : HTML틀   
 chap02 : 기본 HTML   
 chap03 : HTML 음악, 동영상, iframe, div, button, check, radio, submit, reset, fieldset, label, textarea   
